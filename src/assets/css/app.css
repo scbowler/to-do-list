@@ -1,43 +1,9 @@
-@font-face {
-    font-family: quest;
-    src: url(../fonts/quest.ttf);
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ff2525;
+    -webkit-box-shadow: 0 1px 0 0 #ff2525;
+    box-shadow: 0 1px 0 0 #ff2525;
 }
 
-body {
-    margin: 0;
-}
-
-.app {
-    background-color: #000;
-    color: #FFF;
-    font-family: quest;
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
-}
-
-.app .logo {
-    height: 220px;
-    filter: drop-shadow(2px 2px 0px #FFF);
-}
-
-.app h1 {
-    color: #61DAFB;
-    font-size: 5em;
-    letter-spacing: 5px;
-    margin: 0.16em;
-    text-shadow: 2px 2px 0 #FFF;
-}
-
-.rotate {
-    animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: #ff2525;
 }
